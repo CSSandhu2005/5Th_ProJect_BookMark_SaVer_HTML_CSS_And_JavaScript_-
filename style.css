@@ -44,6 +44,7 @@ body {
   padding: 1rem;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
+  margin : 0 10px ; 
 }
 
 .main-heading {
@@ -75,6 +76,11 @@ body {
   color: white;
   font-weight: 700;
   cursor: pointer;
+  transition : all 0.3s ease ; 
+}
+
+#input-button:hover { 
+  background-color : #27ae60 ; 
 }
 
 .bookmarks-container {
@@ -82,8 +88,29 @@ body {
   display : flex ; 
   flex-direction : column ; 
   margin-top: 1.5rem; 
-  overflow-y : scroll ; 
+  overflow-y : auto ; 
   gap : 0.75rem ; 
+  max-height : 200px ; 
+  padding-right : 10px ; 
+}
+
+/* Define the overall width of the scrollbar */
+.bookmarks-container::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.bookmarks-container::-webkit-scrollbar-thumb {
+  background-color : #2ecc71 ; 
+  border-radius : 8px ; 
+}
+
+.bookmarks-container::-webkit-scrollbar-track {
+  background-color : #27ae5f5a ; 
+  border-radius : 8px ;  
+}
+
+.bookmarks-container::-webkit-scrollbar-thumb:hover { 
+  background-color : #27ae60 ; 
 }
 
 .bookmark {
@@ -99,8 +126,14 @@ body {
 
 #remove-button {
     background-color : red ; 
+    font-weight : 600 ; 
     padding : 0.5rem 0.75rem ; 
     color : white ; 
     border-radius : 7px ; 
     cursor : pointer ; 
+    transition : all 0.3s ease ; 
+}
+
+#remove-button:hover {
+  background-color : #c0392b ; 
 }
