@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <h1 class="main-heading">BookMark SaVer</h1>
+      <div class="input-wrapper">
+        <input
+          type="text"
+          id="bookmark-name"
+          class="input-box"
+          placeholder="BookMark Name"
+        />
+        <input
+          type="text"
+          id="link-input"
+          class="input-box"
+          placeholder="BookMark URL"
+        />
+        <button id="input-button">Add BookMark</button>
+      </div>
+      <div class="bookmarks-container">
+        <div class="bookmark">
+          <a href="#">My GitHub ProFile</a>
+          <button id="remove-button">ReMove</button>
+        </div>
+        <div class="bookmark">
+          <a href="#">GooGle</a>
+          <button id="remove-button">ReMove</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
